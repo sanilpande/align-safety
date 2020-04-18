@@ -1,0 +1,2 @@
+obstacle_2d
+-DCATKIN_DEVEL_PREFIX=/home/sanil/project/align-safety/devel -DCMAKE_INSTALL_PREFIX=/home/sanil/project/align-safety/install -G Unix Makefiles
