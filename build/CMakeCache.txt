@@ -291,6 +291,12 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
 //Value Computed by CMake
+docking_verification_BINARY_DIR:STATIC=/home/sanil/project/align-safety/build/docking_verification
+
+//Value Computed by CMake
+docking_verification_SOURCE_DIR:STATIC=/home/sanil/project/align-safety/src/docking_verification
+
+//Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/sanil/project/align-safety/build/gtest/googlemock
 
 //Dependencies for the target
@@ -365,6 +371,9 @@ roscpp_traits_DIR:PATH=/opt/ros/melodic/share/roscpp_traits/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for rospy.
+rospy_DIR:PATH=/opt/ros/melodic/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/melodic/share/rostime/cmake
@@ -485,7 +494,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

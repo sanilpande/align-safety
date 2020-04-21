@@ -3,10 +3,15 @@
 #include <geometry_msgs/Twist.h>
 #include <math.h>
 
+#define RANGE 1.22172999382
+#define INCREMENT 0.0043711271137
+#define STEPS 560
+
 class Chassis{
     public:
         ros::Subscriber lidar_sub;
         ros::Publisher obstacle_pub;
+        ros::ServiceServer hms_service;
 
         Chassis(){
             // calculate maximum distance to detect obstacles
@@ -19,11 +24,11 @@ class Chassis{
             double angle = atan2(width, 2 * total_distance);
             std::cout << "Calculated angle: " << angle * 180 / 3.14 << std::endl;
 
-            double range = 2.3561899662;
-            double start = (range - angle) / 0.0065540750511;
+            // double range = 2.3561899662;
+            double start = (RANGE - angle) / INCREMENT;
 
             int s = int(start);
-            for (int i = s; i < 720-s; i++){
+            for (int i = s; i < STEPS - s; i++){
                 range_array[i] = total_distance;
             }
         }
@@ -31,7 +36,7 @@ class Chassis{
         void obstacle_detection_callback(const sensor_msgs::LaserScan scan)
         {
             // iterating over all values since ideally all element in range should be non zero
-            for (int i = 0; i < 720; i++){
+            for (int i = 0; i < STEPS; i++){
                 if (range_array[i] > scan.ranges[i]){
                     // std::cout << scan.ranges[i] << std::endl;
                     obstacle_flag = true;
@@ -46,18 +51,32 @@ class Chassis{
 
         }
 
+        // bool check(hms_client::ping_pong::Request  &req,
+        //          hms_client::ping_pong::Response &res)
+        // {
+        //   res.msg.header.stamp = ros::Time::now();
+        //   res.health = 1;
+        //   if(obstacle_flag)//assuming this variable is accesible otherwise change accordingly
+        //     res.error_code = 1;
+        //   else
+        //     res.error_code = 0;
+        //   return true;
+        // }
+
+
     private:
         bool obstacle_flag;
-        double range_array[720] = {0};
+        double range_array[STEPS] = {0};
         geometry_msgs::Twist msg;
 
-        double width = 1.355;
-        double vel = 2;
-        double acc = 2; // assuming acc == deceleration
+        // double width = 1.355;
+        double width = 1.85;    // changed since 1.355 wasn not working correctly
+        double vel = 4;
+        double acc = 10; // assuming acc == deceleration
 
         // distances are in meters
         double total_distance = 5;      // to be overwritten in constructor
-        double lidar_distance = 0.1;
+        double lidar_distance = .1;     // from the front
         double safe_distance = 0.3;
 
         // times are in seconds
@@ -65,7 +84,6 @@ class Chassis{
         double comm_buffer = 0.025;
         double safe_buffer = 0.1;
 };
-
 
 
 int main(int argc, char** argv)
@@ -76,6 +94,8 @@ int main(int argc, char** argv)
     Chassis bot;
     bot.lidar_sub = n.subscribe("scan", 1000, &Chassis::obstacle_detection_callback, &bot);
     bot.obstacle_pub = n.advertise<geometry_msgs::Twist>("cmd_vel", 1000);
+
+    // bot.hms_service = n.advertiseService("health_check_obstacle_2d", &Chassis::check, &bot);
 
     ros::Rate loop_rate(50);
 
