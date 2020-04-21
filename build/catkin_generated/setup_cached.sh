@@ -7,4 +7,11 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH="/home/sanil/project/align-safety/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/sanil/project/align-safety/devel/lib:/home/sanil/catkin_ws/devel/lib:/opt/ros/melodic/lib:/usr/local/cuda/lib64"
+export PATH="/opt/ros/melodic/bin:/home/sanil/anaconda3/bin:/home/sanil/anaconda3/condabin:/usr/local/cuda/bin:/home/sanil/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin$"
+export PKG_CONFIG_PATH="/home/sanil/project/align-safety/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/sanil/project/align-safety/build"
+export PYTHONPATH="/home/sanil/project/align-safety/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/sanil/project/align-safety/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/sanil/project/align-safety/src:$ROS_PACKAGE_PATH"

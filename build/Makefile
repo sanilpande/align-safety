@@ -480,6 +480,188 @@ std_msgs_generate_messages_py/fast:
 .PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
+# Target rules for targets named hms_client_geneus
+
+# Build rule for target.
+hms_client_geneus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_geneus
+.PHONY : hms_client_geneus
+
+# fast build rule for target.
+hms_client_geneus/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_geneus.dir/build.make hms_client/CMakeFiles/hms_client_geneus.dir/build
+.PHONY : hms_client_geneus/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_generate_messages_cpp
+
+# Build rule for target.
+hms_client_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_generate_messages_cpp
+.PHONY : hms_client_generate_messages_cpp
+
+# fast build rule for target.
+hms_client_generate_messages_cpp/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_generate_messages_cpp.dir/build.make hms_client/CMakeFiles/hms_client_generate_messages_cpp.dir/build
+.PHONY : hms_client_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named _hms_client_generate_messages_check_deps_hms_msg
+
+# Build rule for target.
+_hms_client_generate_messages_check_deps_hms_msg: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hms_client_generate_messages_check_deps_hms_msg
+.PHONY : _hms_client_generate_messages_check_deps_hms_msg
+
+# fast build rule for target.
+_hms_client_generate_messages_check_deps_hms_msg/fast:
+	$(MAKE) -f hms_client/CMakeFiles/_hms_client_generate_messages_check_deps_hms_msg.dir/build.make hms_client/CMakeFiles/_hms_client_generate_messages_check_deps_hms_msg.dir/build
+.PHONY : _hms_client_generate_messages_check_deps_hms_msg/fast
+
+#=============================================================================
+# Target rules for targets named _hms_client_generate_messages_check_deps_ping_pong
+
+# Build rule for target.
+_hms_client_generate_messages_check_deps_ping_pong: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _hms_client_generate_messages_check_deps_ping_pong
+.PHONY : _hms_client_generate_messages_check_deps_ping_pong
+
+# fast build rule for target.
+_hms_client_generate_messages_check_deps_ping_pong/fast:
+	$(MAKE) -f hms_client/CMakeFiles/_hms_client_generate_messages_check_deps_ping_pong.dir/build.make hms_client/CMakeFiles/_hms_client_generate_messages_check_deps_ping_pong.dir/build
+.PHONY : _hms_client_generate_messages_check_deps_ping_pong/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_generate_messages
+
+# Build rule for target.
+hms_client_generate_messages: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_generate_messages
+.PHONY : hms_client_generate_messages
+
+# fast build rule for target.
+hms_client_generate_messages/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_generate_messages.dir/build.make hms_client/CMakeFiles/hms_client_generate_messages.dir/build
+.PHONY : hms_client_generate_messages/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_gencpp
+
+# Build rule for target.
+hms_client_gencpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_gencpp
+.PHONY : hms_client_gencpp
+
+# fast build rule for target.
+hms_client_gencpp/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_gencpp.dir/build.make hms_client/CMakeFiles/hms_client_gencpp.dir/build
+.PHONY : hms_client_gencpp/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_generate_messages_eus
+
+# Build rule for target.
+hms_client_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_generate_messages_eus
+.PHONY : hms_client_generate_messages_eus
+
+# fast build rule for target.
+hms_client_generate_messages_eus/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_generate_messages_eus.dir/build.make hms_client/CMakeFiles/hms_client_generate_messages_eus.dir/build
+.PHONY : hms_client_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_genlisp
+
+# Build rule for target.
+hms_client_genlisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_genlisp
+.PHONY : hms_client_genlisp
+
+# fast build rule for target.
+hms_client_genlisp/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_genlisp.dir/build.make hms_client/CMakeFiles/hms_client_genlisp.dir/build
+.PHONY : hms_client_genlisp/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_generate_messages_lisp
+
+# Build rule for target.
+hms_client_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_generate_messages_lisp
+.PHONY : hms_client_generate_messages_lisp
+
+# fast build rule for target.
+hms_client_generate_messages_lisp/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_generate_messages_lisp.dir/build.make hms_client/CMakeFiles/hms_client_generate_messages_lisp.dir/build
+.PHONY : hms_client_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_generate_messages_nodejs
+
+# Build rule for target.
+hms_client_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_generate_messages_nodejs
+.PHONY : hms_client_generate_messages_nodejs
+
+# fast build rule for target.
+hms_client_generate_messages_nodejs/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_generate_messages_nodejs.dir/build.make hms_client/CMakeFiles/hms_client_generate_messages_nodejs.dir/build
+.PHONY : hms_client_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named hms_client
+
+# Build rule for target.
+hms_client: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client
+.PHONY : hms_client
+
+# fast build rule for target.
+hms_client/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client.dir/build.make hms_client/CMakeFiles/hms_client.dir/build
+.PHONY : hms_client/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_gennodejs
+
+# Build rule for target.
+hms_client_gennodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_gennodejs
+.PHONY : hms_client_gennodejs
+
+# fast build rule for target.
+hms_client_gennodejs/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_gennodejs.dir/build.make hms_client/CMakeFiles/hms_client_gennodejs.dir/build
+.PHONY : hms_client_gennodejs/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_generate_messages_py
+
+# Build rule for target.
+hms_client_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_generate_messages_py
+.PHONY : hms_client_generate_messages_py
+
+# fast build rule for target.
+hms_client_generate_messages_py/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_generate_messages_py.dir/build.make hms_client/CMakeFiles/hms_client_generate_messages_py.dir/build
+.PHONY : hms_client_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named hms_client_genpy
+
+# Build rule for target.
+hms_client_genpy: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 hms_client_genpy
+.PHONY : hms_client_genpy
+
+# fast build rule for target.
+hms_client_genpy/fast:
+	$(MAKE) -f hms_client/CMakeFiles/hms_client_genpy.dir/build.make hms_client/CMakeFiles/hms_client_genpy.dir/build
+.PHONY : hms_client_genpy/fast
+
+#=============================================================================
 # Target rules for targets named obstacle_2d
 
 # Build rule for target.
@@ -529,6 +711,20 @@ help:
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_py"
+	@echo "... hms_client_geneus"
+	@echo "... hms_client_generate_messages_cpp"
+	@echo "... _hms_client_generate_messages_check_deps_hms_msg"
+	@echo "... _hms_client_generate_messages_check_deps_ping_pong"
+	@echo "... hms_client_generate_messages"
+	@echo "... hms_client_gencpp"
+	@echo "... hms_client_generate_messages_eus"
+	@echo "... hms_client_genlisp"
+	@echo "... hms_client_generate_messages_lisp"
+	@echo "... hms_client_generate_messages_nodejs"
+	@echo "... hms_client"
+	@echo "... hms_client_gennodejs"
+	@echo "... hms_client_generate_messages_py"
+	@echo "... hms_client_genpy"
 	@echo "... obstacle_2d"
 .PHONY : help
 
